@@ -2,7 +2,7 @@
 This repo contains guided examples of deploying Python applications via multiple ways.
 
 ## 1. Flask
-Flask is a micro-framework for deploying Python apps in a straight-forwarded manner.
+Flask is a micro-framework for deploying Python apps in a straight-forward manner.
 
 You can install flask by pip:
 
