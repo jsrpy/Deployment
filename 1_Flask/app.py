@@ -9,8 +9,7 @@ def hello_get():
 	# Getting input from users.
 	print(request.args.get('dateOfBirth'))
 	print(request.args.get('occupation'))
-	x = request.args.get('numbers')
-	print(int(x)+10000)
+	print(request.args.get('numbers'))
 	# Run your model to predict a certain things
 	 
 	# Returning the result
