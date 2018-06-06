@@ -48,9 +48,9 @@ It supports all request methods and authorisation headers.
 
 Download and install the postman tool:
 1. On bash:
-    1. export FLASK_RUN_PORT=5001
-    2. export FLASK_APP=app2.py 
-    3. flask run
+    1. `export FLASK_RUN_PORT=5001`
+    2. `export FLASK_APP=app2.py`
+    3. `flask run`
 2. Browser: http://localhost:5001/predict 
     1. You should see a *Method Not Allowed* error.
 3. Postman: http://localhost:5001/predict -> click SEND button
