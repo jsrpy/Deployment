@@ -67,6 +67,9 @@ You can see the [demo hosted on real](https://uselessflaskapp--jsnc.repl.co/).
 
 The app3.py looks for the designated html file under /templates directory, renders that html, accepts user input in textbox and return the results after processing calculation. 
 
+As you may have realised, this is how normal web users can submit a POST request to the server via submitting through a textbox.
+
+You can always host the app3.py on your localhost with the same flask commands as before.
 
 ## Flask Documentation
 Check out the [flask documentation](http://flask.pocoo.org/).
