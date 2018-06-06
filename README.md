@@ -61,5 +61,12 @@ Download and install the postman tool:
 
 ### Example 3 - Textbox
 
+[app3.py](1_Flask/app3.py) is an example with textbox input.
+
+You can see the [demo hosted on real](https://uselessflaskapp--jsnc.repl.co/).
+
+The app3.py looks for the designated html file under /templates directory, renders that html, accepts user input in textbox and return the results after processing calculation. 
+
+
 ## Flask Documentation
 Check out the [flask documentation](http://flask.pocoo.org/).
