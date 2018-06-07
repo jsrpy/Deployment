@@ -63,7 +63,8 @@ Download and install the postman tool:
 
 [app3.py](1_Flask/app3.py) is an example with textbox input.
 
-You can see the [demo hosted on real](https://uselessflaskapp--jsnc.repl.co/).
+You can see the [demo hosted on Repl](https://uselessflaskapp--jsnc.repl.co/). <sup><sub>(Wait for a while for the packages to 
+    be loaded if you are the first visitor of the day.)</sub></sup>
 
 The app3.py looks for the designated html file under /templates directory, renders that html, accepts user input in textbox and return the results after processing calculation. 
 
