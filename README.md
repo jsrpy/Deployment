@@ -72,5 +72,19 @@ As you may have realised, this is how normal web users can submit a POST request
 
 You can always host the app3.py on your localhost with the same flask commands as before.
 
-## Flask Documentation
+### Flask Documentation
 Check out the [flask documentation](http://flask.pocoo.org/).
+___
+# Deploy for Production
+While flask is easy to use, it is intended for development use but not for direct production. You can always develop and test your application on your local machine. But when it comes to development, it is a standard to deploy on vitural private servers, as they are scalable, cheap and convenient.
+
+## 2. Digital Ocean
+
+[Digital Ocean](https://m.do.co/c/e7833ee793bd) is one of the commonly used VPS. A droplet means a server. So you can create multiple servers all maintained under one account. 
+
+After registration, create the simplest ubuntu server (1GB-memory/25GB-disk). 
+
+### Connect to Your Remote Machine
+1. Open a new command line, type `$ ssh root@ipv4` where ipv4 is the ip address found in your droplet page.
+2. You can find your initial password in your email box. You are forced to change it at your first login to server. Change it to something memorable (E.g *The best apples are from south california*).
+3. Reconnect ssh and you are done! Type `python` and you can use the default python on your remote machine.
