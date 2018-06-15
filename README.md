@@ -88,3 +88,9 @@ After registration, create the simplest ubuntu server (1GB-memory/25GB-disk).
 1. Open a new command line, type `$ ssh root@ipv4` where ipv4 is the ip address found in your droplet page.
 2. You can find your initial password in your email box. You are forced to change it at your first login to server. Change it to something memorable (E.g *The best apples are from south california*).
 3. Reconnect ssh and you are done! Type `python` and you can use the default python on your remote machine.
+
+### Example 4 - Caesar Cipher
+[app4.py](1_Flask/app4.py) is a caesar cipher application delopyed on Digital Ocean.
+
+You can see the demo on [http://46.101.72.245:8080/](http://46.101.72.245:8080/).
+
