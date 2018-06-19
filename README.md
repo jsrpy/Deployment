@@ -94,3 +94,37 @@ After registration, create the simplest ubuntu server (1GB-memory/25GB-disk).
 
 You can see the demo on [http://46.101.72.245:8080/](http://46.101.72.245:8080/).
 
+It allows user inputs of a name and a message to encrypt. The app will return the encrypted message. At the backend, all user inputs and the timestamp will be recored in the `record.csv` file.
+
+### Working with Linux Server
+Here I will guide you through step-by-step how to set up your linux server and deploy the python app as I do.
+
+Every time you open a new machine you would update it to the latest one:
+1. `sudo apt-get update && sudo apt-get upgrade`
+
+Install Python3
+1. `sudo apt install python3`
+2. `sudo install python3-pip`
+
+#### Gunicorn
+Python apps require wsgi, a compatible server to run properly.
+1. Use Ngnix to set up wsgi with flast (too complicated).
+2. Use Gunicorn, another python module, to deploy your flask app (much easier).
+
+#### Pip3 install modules
+1. `pip3 install gunicorn flask`
+2. Check the installed packages using `pip3 list`.
+
+#### Git clone something
+1. `git clone https://github.com/jsrpy/Python_Deployment`
+
+#### Deploy the app with Gunicorn
+1. Nevigate to the app's directory... `cd Python_Deployment/1_Flask`.
+2. Deploy the App: `gunicorn --bind 0.0.0.0:8080 app4`.
+
+The `gunicorn` command basically sends your app4 onto the ipv4 address at port 8080.
+
+By this point, you should see your app running on `ipv4:8080`. Simply go to your browser and visit that page!
+
+
+
