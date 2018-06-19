@@ -100,11 +100,11 @@ It allows user inputs of a name and a message to encrypt. The app will return th
 Here I will guide you through step-by-step how to set up your linux server and deploy the python app as I do.
 
 Every time you open a new machine you would update it to the latest one:
-1. `sudo apt-get update && sudo apt-get upgrade`
+1. `$ sudo apt-get update && sudo apt-get upgrade`
 
 Install Python3
-1. `sudo apt install python3`
-2. `sudo install python3-pip`
+1. `$ sudo apt install python3`
+2. `$ sudo install python3-pip`
 
 #### Gunicorn
 Python apps require wsgi, a compatible server to run properly.
@@ -112,15 +112,26 @@ Python apps require wsgi, a compatible server to run properly.
 2. Use Gunicorn, another python module, to deploy your flask app (much easier).
 
 #### Pip3 install modules
-1. `pip3 install gunicorn flask`
+1. `$ pip3 install gunicorn flask`
 2. Check the installed packages using `pip3 list`.
 
 #### Git clone something
-1. `git clone https://github.com/jsrpy/Python_Deployment`
+1. `$ git clone https://github.com/jsrpy/Python_Deployment`
 
 #### Deploy the app with Gunicorn
-1. Nevigate to the app's directory... `cd Python_Deployment/1_Flask`.
-2. Deploy the App: `gunicorn --bind 0.0.0.0:8080 app4`.
+1. Nevigate to the app's directory... `$ cd Python_Deployment/1_Flask`.
+2. Deploy the App: `$ gunicorn --bind 0.0.0.0:8080 app4`.
+3. After getting an error, do the following:
+
+```
+$ nano app4.py
+```
+Change line 5 & 6 into:
+```
+application = Flask(__name__)
+app = application
+```
+Press `Ctrl-O` to save, then press `enter` & `Ctrl-X` to exit. Now run the gunicorn code again.
 
 The `gunicorn` command basically sends your app4 onto the ipv4 address at port 8080.
 
