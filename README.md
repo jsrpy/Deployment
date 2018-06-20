@@ -112,7 +112,7 @@ Python apps require wsgi, a compatible server to run properly.
 2. Use Gunicorn, another python module, to deploy your flask app (much easier).
 
 #### Pip3 install modules
-1. `$ pip3 install gunicorn flask`
+1. `$ pip3 install gunicorn flask numpy scipy`
 2. Check the installed packages using `pip3 list`.
 
 #### Git clone something
