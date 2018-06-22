@@ -97,6 +97,8 @@ You can see the demo on [http://46.101.72.245:8080/](http://46.101.72.245:8080/)
 It allows user inputs of a name and a message to encrypt. The app will return the encrypted message. At the backend, all user inputs and the timestamp will be recored in the `record.csv` file.
 
 ### Working with Linux Server
+System administration is rarely taught even for computer science students.
+
 Here I will guide you through step-by-step how to set up your linux server and deploy the python app as I do.
 
 Every time you open a new machine you would update it to the latest one:
@@ -120,8 +122,9 @@ Python apps require wsgi, a compatible server to run properly.
 
 #### Deploy the app with Gunicorn
 1. Nevigate to the app's directory... `$ cd Python_Deployment/1_Flask`.
-2. Deploy the App: `$ gunicorn --bind 0.0.0.0:8080 app4`.
-3. After getting an error, do the following:
+2. Create an empty csv file `$ touch record.csv`.
+3. Deploy the App: `$ gunicorn --bind 0.0.0.0:8080 app4`.
+4. After getting an error, do the following:
 
 ```
 $ nano app4.py
@@ -137,5 +140,6 @@ The `gunicorn` command basically sends your app4 onto the ipv4 address at port 8
 
 By this point, you should see your app running on `ipv4:8080`. Simply go to your browser and visit that page!
 
+Submit an entry. Then, check the record by simply printing out the standard output `$cat record.csv` (You should either open a new command line or stop the gunicorn process by pressing `Ctrl+C`).
 
 
