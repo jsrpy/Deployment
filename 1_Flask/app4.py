@@ -33,7 +33,7 @@ def my_form_post():
     y = str(datetime.datetime.now()).split('.')[0]
     #with open('file.json', 'a') as f:
     #    json.dump({'str':x,'time':y}, f)
-    with open('record.csv', 'a') as f:
+    with open('record.csv', 'a+') as f:
         f.write('\n')
         f.write(z+','+x+','+y)
     return processed
